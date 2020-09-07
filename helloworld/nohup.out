@@ -1,0 +1,79 @@
+2020-09-05 16:47:47  file=v2@v2.9.1/service.go:200 level=info Starting [service] go.micro.api.greeter
+2020-09-05 16:47:47  file=grpc/grpc.go:864 level=info Server [grpc] Listening on [::]:33325
+2020-09-05 16:47:47  file=grpc/grpc.go:697 level=info Registry [mdns] Registering node: go.micro.api.greeter-41b4fe3a-8810-48ee-a1a4-7283c72823f0
+2020-09-05 16:47:47  file=api/api.go:285 level=info service=api Registering API Default Handler at /
+2020-09-05 16:47:47  file=http/http.go:90 level=info service=api HTTP API Listening on [::]:8080
+2020-09-05 16:47:47  file=v2@v2.9.1/service.go:200 level=info service=api Starting [service] go.micro.api
+2020-09-05 16:47:47  file=grpc/grpc.go:864 level=info service=api Server [grpc] Listening on [::]:34967
+2020-09-05 16:47:47  file=grpc/grpc.go:697 level=info service=api Registry [mdns] Registering node: go.micro.api-a6a5a0d3-ced6-424a-9787-d7960894a532
+2020-09-05 16:48:17  file=grpc/grpc.go:791 level=info service=api Deregistering node: go.micro.api-a6a5a0d3-ced6-424a-9787-d7960894a532
+2020-09-05 16:48:17  file=grpc/grpc.go:959 level=info service=api Broker [http] Disconnected from 127.0.0.1:0
+2020-09-05 16:48:19  file=grpc/grpc.go:791 level=info Deregistering node: go.micro.api.greeter-41b4fe3a-8810-48ee-a1a4-7283c72823f0
+2020-09-05 16:48:19  file=grpc/grpc.go:959 level=info Broker [http] Disconnected from 127.0.0.1:0
+2020-09-05 16:48:21  file=v2@v2.9.1/service.go:200 level=info Starting [service] go.micro.api.greeter
+2020-09-05 16:48:21  file=grpc/grpc.go:864 level=info Server [grpc] Listening on [::]:42821
+2020-09-05 16:48:21  file=grpc/grpc.go:697 level=info Registry [mdns] Registering node: go.micro.api.greeter-9076dc08-effd-471c-907e-a0e4e3a62904
+2020-09-05 16:48:21  file=api/api.go:285 level=info service=api Registering API Default Handler at /
+2020-09-05 16:48:21  file=http/http.go:90 level=info service=api HTTP API Listening on [::]:8080
+2020-09-05 16:48:21  file=v2@v2.9.1/service.go:200 level=info service=api Starting [service] go.micro.api
+2020-09-05 16:48:21  file=grpc/grpc.go:864 level=info service=api Server [grpc] Listening on [::]:41921
+2020-09-05 16:48:21  file=grpc/grpc.go:697 level=info service=api Registry [mdns] Registering node: go.micro.api-eac1e0b7-35a1-4ad9-b167-5fe9fc607cb5
+2020-09-05 16:48:35  file=grpc/grpc.go:791 level=info service=api Deregistering node: go.micro.api-eac1e0b7-35a1-4ad9-b167-5fe9fc607cb5
+2020-09-05 16:48:35  file=grpc/grpc.go:959 level=info service=api Broker [http] Disconnected from 127.0.0.1:0
+2020-09-05 16:48:36  file=grpc/grpc.go:791 level=info Deregistering node: go.micro.api.greeter-9076dc08-effd-471c-907e-a0e4e3a62904
+2020-09-05 16:48:36  file=grpc/grpc.go:959 level=info Broker [http] Disconnected from 127.0.0.1:0
+2020-09-05 16:48:38  file=v2@v2.9.1/service.go:200 level=info Starting [service] go.micro.api.greeter
+2020-09-05 16:48:38  file=grpc/grpc.go:864 level=info Server [grpc] Listening on [::]:46535
+2020-09-05 16:48:38  file=grpc/grpc.go:697 level=info Registry [mdns] Registering node: go.micro.api.greeter-5284adda-cb1e-4501-86f3-fdf0c18d0f21
+2020-09-05 16:48:39  file=api/api.go:285 level=info service=api Registering API Default Handler at /
+2020-09-05 16:48:39  file=http/http.go:90 level=info service=web HTTP API Listening on [::]:8082
+2020-09-05 16:48:39  file=v2@v2.9.1/service.go:200 level=info service=web Starting [service] go.micro.web
+2020-09-05 16:48:39  file=grpc/grpc.go:864 level=info service=web Server [grpc] Listening on [::]:34077
+2020-09-05 16:48:39  file=grpc/grpc.go:697 level=info service=web Registry [mdns] Registering node: go.micro.web-06474745-78d4-4475-afb4-3b6b3ac58b40
+2020-09-05 16:48:39  file=http/http.go:90 level=info service=api HTTP API Listening on [::]:8080
+2020-09-05 16:48:39  file=v2@v2.9.1/service.go:200 level=info service=api Starting [service] go.micro.api
+2020-09-05 16:48:39  file=grpc/grpc.go:864 level=info service=api Server [grpc] Listening on [::]:34983
+2020-09-05 16:48:39  file=grpc/grpc.go:697 level=info service=api Registry [mdns] Registering node: go.micro.api-cc7c2d3d-c765-4c4d-b5bf-a3cf1182bc26
+192.168.199.154 - - [05/Sep/2020:16:48:41 +0800] "GET / HTTP/1.1" 200 4846 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+192.168.199.154 - - [05/Sep/2020:16:48:43 +0800] "GET /favicon.ico HTTP/1.1" 200 0 "http://192.168.199.109:8082/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+192.168.199.154 - - [05/Sep/2020:16:48:43 +0800] "GET /services HTTP/1.1" 200 4553 "http://192.168.199.109:8082/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+192.168.199.154 - - [05/Sep/2020:16:48:45 +0800] "GET /favicon.ico HTTP/1.1" 200 0 "http://192.168.199.109:8082/services" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+2020-09-05 16:50:24  file=registry/registry.go:102 level=error service=api unable to get service: service not found
+2020-09-05 16:50:24  file=registry/registry.go:102 level=error service=api unable to get service: service not found
+127.0.0.1 - - [05/Sep/2020:16:51:10 +0800] "GET /greeter/say/hello?name=Pengju HTTP/1.1" 500 167 "" "curl/7.58.0"
+2020-09-05 16:52:23  file=grpc/grpc.go:791 level=info Deregistering node: go.micro.api.greeter-5284adda-cb1e-4501-86f3-fdf0c18d0f21
+2020-09-05 16:52:23  file=grpc/grpc.go:959 level=info Broker [http] Disconnected from 127.0.0.1:0
+2020-09-05 16:52:23  file=registry/registry.go:102 level=error service=api unable to get service: service not found
+2020-09-05 16:52:23  file=registry/registry.go:102 level=error service=api unable to get service: service not found
+127.0.0.1 - - [05/Sep/2020:16:52:39 +0800] "GET /greeter/say/hello?name=Pengju HTTP/1.1" 500 167 "" "curl/7.58.0"
+2020-09-05 16:55:11  file=registry/registry.go:102 level=error service=api unable to get service: service not found
+2020-09-05 16:55:11  file=registry/registry.go:102 level=error service=api unable to get service: service not found
+2020-09-05 16:56:28  file=registry/registry.go:102 level=error service=api unable to get service: service not found
+2020-09-05 16:56:28  file=registry/registry.go:102 level=error service=api unable to get service: service not found
+2020-09-05 16:56:58  file=registry/registry.go:102 level=error service=api unable to get service: service not found
+2020-09-05 16:56:58  file=registry/registry.go:102 level=error service=api unable to get service: service not found
+2020-09-05 16:59:15  file=registry/registry.go:102 level=error service=api unable to get service: service not found
+2020-09-05 17:05:40  file=registry/registry.go:102 level=error service=api unable to get service: service not found
+2020-09-05 17:05:40  file=registry/registry.go:102 level=error service=api unable to get service: service not found
+2020-09-05 17:06:34  file=registry/registry.go:102 level=error service=api unable to get service: service not found
+127.0.0.1 - - [05/Sep/2020:18:03:25 +0800] "POST /rpc HTTP/1.1" 500 94 "" "curl/7.58.0"
+127.0.0.1 - - [05/Sep/2020:18:03:48 +0800] "GET /greeter/say/hello?name=Pengju HTTP/1.1" 500 94 "" "curl/7.58.0"
+127.0.0.1 - - [05/Sep/2020:18:04:05 +0800] "GET /greeter/say/hello?name=Pengju HTTP/1.1" 500 167 "" "curl/7.58.0"
+2020-09-05 18:04:10  file=registry/registry.go:102 level=error service=api unable to get service: service not found
+127.0.0.1 - - [05/Sep/2020:18:05:19 +0800] "POST /greeter/say/hello?name=Pengju HTTP/1.1" 500 167 "" "curl/7.58.0"
+127.0.0.1 - - [05/Sep/2020:18:05:41 +0800] "POST /greeter/greeter/hello?name=Pengju HTTP/1.1" 500 103 "" "curl/7.58.0"
+2020-09-05 18:07:18  file=registry/registry.go:102 level=error service=api unable to get service: service not found
+2020-09-05 18:07:18  file=registry/registry.go:102 level=error service=api unable to get service: service not found
+127.0.0.1 - - [05/Sep/2020:18:08:13 +0800] "POST /greeter/greeter/hello?name=Pengju HTTP/1.1" 500 103 "" "curl/7.58.0"
+127.0.0.1 - - [05/Sep/2020:18:08:24 +0800] "GET /greeter/say/hello?name=Pengju HTTP/1.1" 500 167 "" "curl/7.58.0"
+127.0.0.1 - - [05/Sep/2020:18:08:37 +0800] "POST /greeter/say/hello?name=Pengju HTTP/1.1" 500 167 "" "curl/7.58.0"
+2020-09-05 18:27:10  file=registry/registry.go:102 level=error service=api unable to get service: service not found
+2020-09-05 18:27:10  file=registry/registry.go:102 level=error service=api unable to get service: service not found
+127.0.0.1 - - [05/Sep/2020:18:40:41 +0800] "GET /greeter/Pengju HTTP/1.1" 500 94 "" "curl/7.58.0"
+127.0.0.1 - - [05/Sep/2020:18:42:07 +0800] "GET /greeter/Pengju HTTP/1.1" 500 94 "" "curl/7.58.0"
+2020-09-05 21:56:57  file=registry/registry.go:102 level=error service=api unable to get service: service not found
+2020-09-05 21:56:57  file=registry/registry.go:102 level=error service=api unable to get service: service not found
+2020-09-05 22:28:52  file=grpc/grpc.go:791 level=info service=api Deregistering node: go.micro.api-cc7c2d3d-c765-4c4d-b5bf-a3cf1182bc26
+2020-09-05 22:28:52  file=grpc/grpc.go:959 level=info service=api Broker [http] Disconnected from 127.0.0.1:0
+2020-09-05 22:28:52  file=grpc/grpc.go:791 level=info service=web Deregistering node: go.micro.web-06474745-78d4-4475-afb4-3b6b3ac58b40
+2020-09-05 22:28:52  file=grpc/grpc.go:959 level=info service=web Broker [http] Disconnected from 127.0.0.1:0
