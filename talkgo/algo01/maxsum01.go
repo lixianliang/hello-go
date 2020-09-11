@@ -6,9 +6,8 @@ import (
 )
 
 func main() {
-	//FindMinSum()
 	arr := []int{1, 2, 4, 7, 11, 15}
-	a, b, err := FindMinSum(arr, 15)
+	a, b, err := FindMaxSum(arr, 15)
 	if err != nil {
 		fmt.Println("not find")
 	} else {
@@ -16,7 +15,7 @@ func main() {
 	}
 
 	arr2 := []int{1, 2, 4, 7, 11, 16}
-	a, b, err = FindMinSum(arr2, 17)
+	a, b, err = FindMaxSum(arr2, 17)
 	if err != nil {
 		fmt.Println("not find")
 	} else {
@@ -24,7 +23,7 @@ func main() {
 	}
 
 	arr3 := []int{1, 2, 4, 7, 11, 16}
-	a, b, err = FindMinSum(arr3, 10)
+	a, b, err = FindMaxSum(arr3, 10)
 	if err != nil {
 		fmt.Println("not find")
 	} else {
@@ -32,7 +31,7 @@ func main() {
 	}
 }
 
-func FindMinSum(arr []int, s int) (int, int, error) {
+func FindMaxSum(arr []int, s int) (int, int, error) {
 	isFind := false
 	a, b := 0, 0
 	if len(arr) < 2 {
