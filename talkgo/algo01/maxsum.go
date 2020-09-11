@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	//	"log"
+	"log"
 )
 
 func main() {
@@ -32,6 +32,66 @@ func main() {
 }
 
 func FindMaxSum(arr []int, s int) (int, int, error) {
+	isFind := false
+	a, b := 0, 0
+	if len(arr) < 2 {
+		return a, b, fmt.Errorf("arr must > 2")
+	}
+	for i, v := range arr {
+		x := s - v //  定义x为目标值
+		if x < v { // 要查的目标值已经小于当前的值
+			continue
+		}
+
+		if i == len(arr)-1 {
+			break
+		}
+
+		// 当前值后面查找目标值
+		index, err := BinarySearch(arr[i+1:], x)
+		if err != nil {
+			continue
+		}
+
+		log.Printf("find match arr[%d]:%d arr[%d]:%d", i, v, i+1+index, x)
+		if isFind {
+			if v*x > a*b {
+				a = v
+				b = x
+			}
+		} else {
+			a = v
+			b = x
+			isFind = true
+		}
+	}
+
+	if !isFind {
+		return a, b, fmt.Errorf("not found")
+	}
+
+	return a, b, nil
+}
+
+// 二分查找
+func BinarySearch(arr []int, k int) (int, error) {
+	low, high := 0, len(arr)-1
+	for low <= high {
+		//mid := (low + high) / 2
+		mid := low + (high-low)/2 // 防止整数溢出
+		if k < arr[mid] {
+			high = mid - 1
+		} else if k > arr[mid] {
+			low = mid + 1
+		} else {
+			return mid, nil
+		}
+	}
+
+	return 0, fmt.Errorf("BinarySearch not found")
+}
+
+func FindMaxSum2(arr []int, s int) (int, int, error) {
 	if len(arr) < 2 {
 		return 0, 0, fmt.Errorf("arr must > 2")
 	}
