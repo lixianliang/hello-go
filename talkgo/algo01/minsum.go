@@ -7,7 +7,7 @@ import (
 
 func main() {
 	arr := []int{1, 2, 4, 7, 11, 15}
-	a, b, err := FindMinSum(arr, 15)
+	a, b, err := FindMinSum3(arr, 15)
 	if err != nil {
 		fmt.Println("not find")
 	} else {
@@ -23,7 +23,7 @@ func main() {
 	}
 
 	arr3 := []int{1, 2, 4, 7, 11, 16}
-	a, b, err = FindMinSum(arr3, 10)
+	a, b, err = FindMinSum3(arr3, 10)
 	if err != nil {
 		fmt.Println("not find")
 	} else {
@@ -118,6 +118,41 @@ func FindMinSum2(arr []int, s int) (int, int, error) {
 				a = val
 				b = x
 			}
+		}
+	}
+
+	if !isFind {
+		return a, b, fmt.Errorf("arr not find")
+	}
+
+	return a, b, nil
+}
+
+// 双指针方式
+// 时间复杂度：O(N)
+// 空间复杂度：O(1)
+func FindMinSum3(arr []int, s int) (int, int, error) {
+	a, b := 0, 0
+	isFind := false
+	low, high := 0, len(arr)-1
+	for low < high {
+		if arr[low]+arr[high] > s {
+			high--
+		} else if arr[low]+arr[high] < s {
+			low++
+		} else {
+			if isFind {
+				if arr[low]*arr[high] < a*b {
+					a = arr[low]
+					b = arr[high]
+				}
+			} else {
+				isFind = true
+				a = arr[low]
+				b = arr[high]
+			}
+			low++
+			high--
 		}
 	}
 
