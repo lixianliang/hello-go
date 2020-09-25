@@ -53,8 +53,8 @@ func Palindrom(s string) (int, string) {
 		}
 	}
 
-	maxN = dp[0][len(s)-1]
+	maxN = dp[0][len(s)-1] // 回文最大长度
 	key := fmt.Sprintf("%d_%d", 0, len(s)-1)
-	maxStr, _ = maxStrMap[key]
+	maxStr, _ = maxStrMap[key] // 回文最长字符串
 	return maxN, maxStr
 }
