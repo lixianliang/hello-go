@@ -18,7 +18,7 @@ type question struct {
 	ans
 }
 
-func Test_substr(t *testing.T) {
+func Test_ContainsAny(t *testing.T) {
 	qs := []question{
 		{
 			param{"", "abc"},
