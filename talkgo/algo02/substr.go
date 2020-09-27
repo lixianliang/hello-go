@@ -58,7 +58,7 @@ func Bm(s string, strs []string) {
 方法2: 使用BM匹配算法
 主串的长度记为N，子串的长度记为M
 时间复杂度：O(M)
-空间复杂度：O(3*N)	计算比较复杂
+空间复杂度：O(N/M)	最差为O(3N)
 */
 func BmSubstr(s, substr string) int {
 	if len(s) < len(substr) {
