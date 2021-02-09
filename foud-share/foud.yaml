@@ -1,0 +1,46 @@
+todo: 投资组合
+pools:
+  - name: "精选5大股票基金"
+    salaryBase: 30000
+    foudPercent: 0.09
+    scores: [1.4, 1.4, 1.2, 1.0, 1.0]
+    quoteType: 1
+    fouds:
+      - name: "中欧时代先锋A"
+        todayQuote: 0.0238
+        weekQuote: 0.0294
+        monthQuote: 0.058
+      - name: "富国天惠成长混合A"
+        todayQuote: 0.0173
+        weekQuote: 0.0454
+        monthQuote: 0.0542
+      - name: "汇添富价值精选混合A"
+        todayQuote: 0.0216
+        weekQuote: 0.0441
+        monthQuote: 0.0657
+      - name: "富国天惠成长混合A"
+        todayQuote: 0.0208
+        weekQuote: 0.0555
+        monthQuote: 0.1155
+      - name: "易方达蓝筹精选混合"
+        todayQuote: 0.022
+        weekQuote: 0.0703
+        monthQuote: 0.0532
+  - name: "精选3大债券基金"
+    salaryBase: 30000
+    foudPercent: 0.04
+    scores: [1.6, 1.3, 1.1]
+    quoteType: 1
+    fouds:
+      - name: "嘉实稳华纯债债券"
+        todayQuote: 0.0001
+        weekQuote: 0.0009
+        monthQuote: 0.0013
+      - name: "大摩双利增强债券A"
+        todayQuote: 0.0001
+        weekQuote: -0.0009
+        monthQuote: -0.0009
+      - name: "鹏华丰禄债券"
+        todayQuote: 0.0001
+        weekQuote: 0.0004
+        monthQuote: 0.0004
