@@ -1,0 +1,15 @@
+ts=2020-08-27T03:54:25.259463265Z caller=logging.go:28 function=word min=4 max=6 result=fama took=1.715µs
+ts=2020-08-27T03:54:29.435690367Z caller=logging.go:28 function=word min=4 max=6 result=grave took=1.587µs
+ts=2020-08-27T03:54:41.254670945Z caller=error_handler.go:27 err="Request type only valid for wrod, setence and paragraph"
+ts=2020-08-27T03:54:43.358753Z caller=error_handler.go:27 err="Request type only valid for wrod, setence and paragraph"
+ts=2020-08-27T03:54:46.279996302Z caller=error_handler.go:27 err="Request type only valid for wrod, setence and paragraph"
+ts=2020-08-27T03:54:54.895204636Z caller=error_handler.go:27 err="Request type only valid for wrod, setence and paragraph"
+ts=2020-08-27T03:55:06.099642742Z caller=error_handler.go:27 err="Request type only valid for wrod, setence and paragraph"
+ts=2020-08-27T03:55:12.091191074Z caller=logging.go:28 function=word min=4 max=6 result=nosse took=1.682µs
+ts=2020-08-27T03:55:19.159909831Z caller=error_handler.go:27 err="Request type only valid for wrod, setence and paragraph"
+ts=2020-08-27T03:55:55.452207101Z caller=error_handler.go:27 err="Request type only valid for wrod, setence and paragraph"
+ts=2020-08-27T03:55:59.434670013Z caller=error_handler.go:27 err="Request type only valid for wrod, setence and paragraph"
+ts=2020-08-27T03:56:55.023403725Z caller=logging.go:42 function=Sentence min=3 max=6 result="Re dicam fias." took=28.118µs
+ts=2020-08-27T03:56:58.348575986Z caller=logging.go:42 function=Sentence min=3 max=7 result="Deo vos satietate." took=5.596µs
+ts=2020-08-27T03:57:03.205601356Z caller=logging.go:42 function=Sentence min=3 max=7 result="Fit donec amare." took=6.128µs
+ts=2020-08-27T03:57:47.913458647Z caller=logging.go:42 function=Sentence min=3 max=7 result="Hi ea ore hac hac laetusque." took=5.445µs
