@@ -2,29 +2,29 @@ todo: 投资组合
 pools:
   - name: "精选5大股票基金"
     salaryBase: 30000
-    foudPercent: 0.09
+    foudPercent: 0.06
     scores: [1.4, 1.4, 1.2, 1.0, 1.0]
     quoteType: 1
     fouds:
+      - name: "景顺长城新兴成长混合"
+        todayQuote: 4
+        weekQuote: 4
+        monthQuote: 0.0542
       - name: "中欧时代先锋A"
-        todayQuote: 0.0238
-        weekQuote: 0.0294
+        todayQuote: 2
+        weekQuote: 2
         monthQuote: 0.058
       - name: "富国天惠成长混合A"
-        todayQuote: 0.0173
-        weekQuote: 0.0454
-        monthQuote: 0.0542
-      - name: "汇添富价值精选混合A"
-        todayQuote: 0.0216
-        weekQuote: 0.0441
-        monthQuote: 0.0657
-      - name: "富国天惠成长混合A"
-        todayQuote: 0.0208
-        weekQuote: 0.0555
+        todayQuote: 5
+        weekQuote: 5
         monthQuote: 0.1155
+      - name: "汇添富价值精选混合A"
+        todayQuote: 3
+        weekQuote: 3
+        monthQuote: 0.0657
       - name: "易方达蓝筹精选混合"
-        todayQuote: 0.022
-        weekQuote: 0.0703
+        todayQuote: 1
+        weekQuote: 1
         monthQuote: 0.0532
   - name: "精选3大债券基金"
     salaryBase: 30000
