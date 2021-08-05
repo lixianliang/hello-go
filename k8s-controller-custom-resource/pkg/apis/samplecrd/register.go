@@ -1,12 +1,6 @@
-package v1
+package samplecrd
 
-func addKnownTypes(scheme *runtime.Scheme) error {
-	scheme.AddKnownTypes(
-		SchemeGroupVersion,
-		&Network{},
-		&NetworkList{},
-	)
-
-	metav1.AddToGroupVersion(scheme, SchemeGroupVersion)
-	return nil
-}
+const (
+	GroupName = "samplecrd.k8s.io"
+	Version   = "v1"
+)

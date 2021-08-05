@@ -1,7 +1,7 @@
 package v1
 
 import (
-	metav1 "k8s.io/apimachiner/pkg/apis/meta/v1"
+	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 )
 
 // +genclient
@@ -10,13 +10,13 @@ import (
 
 // Network describes a Network resource
 type Network struct {
-	metav1.Type       `json:",inline"`
+	metav1.TypeMeta   `json:",inline"`
 	metav1.ObjectMeta `json:"metadata,omitempty"`
 
-	Spec networkspec `json:"speck"`
+	Spec NetworkSpec `json:"spec"`
 }
 
-type networkspec struct {
+type NetworkSpec struct {
 	Cidr    string `json:"cidr"`
 	Gateway string `json:"gateway"`
 }
@@ -24,7 +24,7 @@ type networkspec struct {
 // +k8s:deepcopy-gen:interfaces=k8s.io/apimachinery/pkg/runtime.Object
 
 // NetworkList is a list of network resources
-type NetWorkList struct {
+type NetworkList struct {
 	metav1.TypeMeta `json:",inline"`
 	metav1.ListMeta `json:"metadata"`
 
